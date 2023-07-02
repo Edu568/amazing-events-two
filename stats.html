@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/img/favicon-AmazingEvents.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Stats - Amazing Events</title>
+</head>
+
+<body id="stats-body">
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/Logo_Amazing_Events.png" alt="Logo Amazing Events">
+                    <h1 class="d-none">Amazing Events</h1>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                            class="bi bi-caret-down" viewBox="0 0 16 16">
+                            <path
+                                d="M3.204 5h9.592L8 10.481 3.204 5zm-.753.659 4.796 5.48a1 1 0 0 0 1.506 0l4.796-5.48c.566-.647.106-1.659-.753-1.659H3.204a1 1 0 0 0-.753 1.659z" />
+                        </svg>
+                    </span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="current-date-container m-0 bg-gradient text-body-secondary">
+                        <p id="current-date-p" class="m-0">
+                            <!-- CURRENT DATE HERE -->
+                        </p>
+                    </div>
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="upcoming-events.html">Upcoming Events</a>
+                        <a class="nav-link" href="past-events.html">Past Events</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link active flex-grow-1" aria-current="page" href="#">Stats</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="stats-bg-img"></div>
+            <div class="banner">
+                <a href="contact.html">❮</a>
+                <h2>Stats</h2>
+                <a href="#">❯</a>
+            </div>
+
+            <div class="container stats-container">
+                    <h3 id="top-3-title">Event Statistics</h3>
+                <div class="stats-table-container">
+                <table class="table table-borderless text-warning caption-top table-sm align-middle table-hover stats-table">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="p-2">#</th>
+                            <th scope="col" class="p-2 text-success">Events with the highest percentage of
+                                attendance:</th>
+                            <th scope="col" class="p-2 text-danger">Events with the lowest percentage of
+                                attendance:</th>
+                            <th scope="col" class="p-2 text-info">Events with larger capacity:</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row" class="p-2">1</th>
+                            <td class="px-3 py-2 highest-assistance">--</td>
+                            <td class="px-3 py-2 lowest-assistance">--</td>
+                            <td class="px-3 py-2 larger-capacity">--</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-2">2</th>
+                            <td class="px-3 py-2 highest-assistance">--</td>
+                            <td class="px-3 py-2 lowest-assistance">--</td>
+                            <td class="px-3 py-2 larger-capacity">--</td>
+                        </tr>
+                        <tr>
+                            <th scope="row" class="p-2">3</th>
+                            <td class="px-3 py-2 highest-assistance">--</td>
+                            <td class="px-3 py-2 lowest-assistance">--</td>
+                            <td class="px-3 py-2 larger-capacity">--</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                <div class="row column-gap-5 px-3">
+                    <table
+                    class="col table table-light table-striped table-hover table-bordered border-info caption-top shadow">
+                    <caption>
+                        <h3>Upcoming events statistics by category</h3>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="col-3">Categories</th>
+                            <th scope="col" class="col-4">Revenues</th>
+                            <th scope="col" class="col-5">Percentage of attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider align-middle" id="ue-by-category-container">
+                        <!-- STATISTICS HERE -->
+                    </tbody>
+                </table>
+
+                <table
+                    class="col table table-danger table-striped table-hover table-bordered border-light caption-top shadow">
+                    <caption>
+                        <h3>Past events statistics by category</h3>
+                    </caption>
+                    <thead>
+                        <tr>
+                            <th scope="col" class="col-3">Categories</th>
+                            <th scope="col" class="col-4">Revenues</th>
+                            <th scope="col" class="col-5">Percentage of attendance</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider align-middle" id="pe-by-category-container">
+                        <!-- STATISTICS HERE -->
+                    </tbody>
+                </table>
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+    <footer class="d-flex justify-content-between align-items-center">
+        <div class="social">
+            <ul class="icon-list d-flex">
+                <li class="icon-item">
+                    <a href="#" class="icon-link"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="icon-item">
+                    <a href="#" class="icon-link"><i class="bi bi-instagram"></i></a>
+                </li>
+                <li class="icon-item">
+                    <a href="#" class="icon-link"><i class="bi bi-whatsapp"></i></a>
+                </li>
+            </ul>
+        </div>
+        <p>FE01-TM</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/stats.js"></script>
+</body>
+
+</html>
